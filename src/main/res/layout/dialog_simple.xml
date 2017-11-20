@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_weight="1"
+        android:layout_margin="20dp"
+        android:text="您扫描的二维码不在列表当中，是否保存当前二维码数据？（确定将清除历史数据）"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:lineSpacingExtra="5dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="0dp"
+            android:background="@color/null_color"
+            android:layout_height="match_parent"
+            android:text="取消"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bt_commit"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@color/null_color"
+            android:text="确认"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
